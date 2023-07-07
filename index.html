@@ -37,7 +37,7 @@
                           <h2 class="card-title">coffee Js</h2>
                           <p>Price: $<span>100</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCard(this)">Buy Now</button>
                           </div>
                         </div>
                       </div>
@@ -45,10 +45,10 @@
                     <div class="card card-compact w-full bg-base-100 shadow-xl">
                         <figure><img src="./img/heart_js.jpg" class="w-full h-40"  alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">coffee Js</h2>
-                          <p>Price: $<span>110</span></p>
+                          <h2 class="card-title">Heart Js</h2>
+                          <p>Price: $<span>113</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCard(this)">Buy Now</button>
                           </div>
                         </div>
                       </div>
@@ -56,10 +56,10 @@
                       <div class="card card-compact w-full bg-base-100 shadow-xl">
                         <figure><img src="./img/panda.png" class="w-full h-40"  alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">coffee Js</h2>
-                          <p>Price: $<span>110</span></p>
+                          <h2 class="card-title">Panda Js</h2>
+                          <p>Price: $<span>112</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCard(this)">Buy Now</button>
                           </div>
                         </div>
                       </div>
@@ -67,10 +67,10 @@
                       <div class="card card-compact w-full bg-base-100 shadow-xl">
                         <figure><img src="./img/umbrella.png" class="w-full h-40"  alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">coffee Js</h2>
-                          <p>Price: $<span>110</span></p>
+                          <h2 class="card-title">Umberlla Js</h2>
+                          <p>Price: $<span>105</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCard(this)">Buy Now</button>
                           </div>
                         </div>
                       </div>
@@ -78,17 +78,17 @@
                       <div class="card card-compact w-full bg-base-100 shadow-xl">
                         <figure><img src="./img/vue-js.jpg" class="w-full h-40"  alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">coffee Js</h2>
-                          <p>Price: $<span>110</span></p>
+                          <h2 class="card-title">Vue Js</h2>
+                          <p>Price: $<span>125</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="addToCard(this)">Buy Now</button>
                           </div>
                         </div>
                       </div>
                   </div>
                 <!-- ... -->
                 <div>
-                    <h2 class="text-3xl">Total added products <span class="text-blue-500">0</span></h2>
+                    <h2 class="text-3xl">Total added products <span class="text-blue-500" id="total-product">0</span></h2>
 
                     <div class="overflow-x-auto">
                         <table class="table table-zebra">
@@ -100,7 +100,7 @@
                               <th>PRICE</th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody id="cart-products">
                            
                           </tbody>
                         </table>
@@ -110,5 +110,7 @@
               </div>
         </div>
     </section>
+
+    <script src="js/shopping.js"></script>
 </body>
 </html>
